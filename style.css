@@ -18,6 +18,7 @@ body{
 
 .Menu a{
     float:right;
+    width: 100%;
 }
 
 *{
