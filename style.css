@@ -4,21 +4,12 @@ body{
 
     background-color: rgb(9, 9, 37);
 
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
     height : 100vh;
-}
-
-.Head-Section{
-    position : sticky;
-    top: 0px;
-    left: 0px;
-
-    width: 100vw;
-    height : 53px;
-}
-
-.Menu a{
-    float:right;
-    width: 100%;
 }
 
 *{
