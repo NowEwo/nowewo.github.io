@@ -12,6 +12,15 @@ body{
     height : 100vh;
 }
 
+.Head-Section{
+    position : sticky;
+    top: 0px;
+    left: 0px;
+
+    width: 100vw;
+    height : 53px;
+}
+
 *{
     font-family : "Montserrat" , sans-serif ;
     color : rgb(201, 198, 228);
