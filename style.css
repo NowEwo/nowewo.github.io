@@ -4,12 +4,50 @@ body{
 
     background-color: rgb(9, 9, 37);
 
+    height : 100vh;
+}
+
+.Header{
+    height:100vh;
+
     display: flex;
 
     justify-content: center;
     align-items: center;
 
-    height : 100vh;
+    flex-direction: column;
+
+    line-height: 91%;
+}
+
+.code-style{
+    font-weight: bold;
+    color: rgb(148, 148, 212);
+}
+
+.Bg-Filter{
+    background-color: rgba(0, 0, 0, 0.009);
+    backdrop-filter: blur(100px);
+    position: absolute;
+    height:100vh;
+    width: 100vw;
+    z-index: 0;
+    left:0px;
+    top: 0px;
+}
+
+.Light{
+    background-color:rgb(92, 115, 136);
+    position: absolute;
+    aspect-ratio: 1/1;
+    opacity: 19vw;
+    height: auto;
+    width: 19vw;
+    z-index: -1;
+}
+
+.Content{
+    z-index: 3;
 }
 
 *{
