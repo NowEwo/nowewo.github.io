@@ -5,9 +5,16 @@ body{
     background-color: rgb(9, 9, 37);
 
     height : 100vh;
+
+    overflow-x: hidden;
 }
 
-.Header{
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.Section{
+
     height:100vh;
 
     display: flex;
@@ -20,9 +27,53 @@ body{
     line-height: 91%;
 }
 
+.Navbar{
+    flex-direction: row;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 51px;
+    z-index: 3;
+    left: 0px;
+    top: 0px;
+}
+
+.Navbar-Links{
+    position: absolute;
+    right: 0px;
+}
+
+.Navbar p{
+    margin-left: 51px;
+    font-size: larger;
+}
+
+.Navbar-Links{
+    right: 25px;
+}
+
+.Navbar-Links *{
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    height: 51px;
+    padding-right: 13px;
+    padding-left: 13px;
+    transition: all 0.19s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.Navbar-Links *:hover{
+    color:rgb(201, 198, 228)
+}
+
+.Navbar *{
+    color:white;
+}
+
 .code-style{
-    font-weight: bold;
     color: rgb(148, 148, 212);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .Bg-Filter{
@@ -40,8 +91,8 @@ body{
     background-color:rgb(92, 115, 136);
     position: absolute;
     aspect-ratio: 1/1;
-    opacity: 19vw;
     height: auto;
+    opacity: 51%;
     width: 19vw;
     z-index: -1;
 }
@@ -50,7 +101,35 @@ body{
     z-index: 3;
 }
 
+.Content-Row{
+    flex-direction: row;
+}
+
+.Content-Row *{
+    margin: 31px;
+}
+
+*[FloatAnimation]{
+    animation-name: Float;
+    animation-duration: 3s;
+    animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-iteration-count: infinite;
+}
+
+@keyframes Float {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
 *{
     font-family : "Montserrat" , sans-serif ;
     color : rgb(201, 198, 228);
+    user-select: none;
 }

@@ -8,15 +8,44 @@
     <title>Ewo</title>
 </head>
 <body>
-    <div class="Header">
+    <div class="Navbar">
+        <p onclick="this.innerText='$Ewo';this.style.color='yellow'">Ewo</p>
+        <div class="Navbar-Links">
+            <button onclick="this.innerText='as.ewo'">Discord</button>
+            <button onclick="NavigateTo('https://www.github.com/nowewo')">Github</button>
+            <button onclick="NavigateTo('#')">Home</button>
+        </div>
+    </div>
+    <div class="Section" style="top:0px">
         <div class="Content">
             <h1>Welcome here, it's Ewo</h1>
-            <p><span class="code-style">Developper</span> and <span class="code-style">designer</span></p>
+            <p><a class="code-style" href="#DevelopperSection">Developper</a> and <a class="code-style" href="#DesignerSection">designer</a></p>
         </div>
         <div class="Background">
             <div class="Bg-Filter"></div>
             <div class="Light" style="top: 15vh;left: 15vh;"></div>
+            <div class="Light" style="bottom: 31vh;right: 31vh;"></div>
         </div>
     </div>
+    <div class="Section Content-Row" id="DevelopperSection">
+        <h1 FloatAnimation>Developper</h1>
+        <div>
+            <p>Html 5, CSS 3</p>
+            <p>Plain JS, Node JS</p>
+            <p>Python 3</p>
+        </div>
+    </div>
+    <div class="Section Content-Row" id="DesignerSection">
+        <div>
+            <p>Figma</p>
+            <p>Adobe Animate, Illustrator</p>
+        </div>
+        <h1 FloatAnimation>Designer</h1>
+    </div>
 </body>
+<script>
+    function NavigateTo(Url){
+        document.location.href = Url;
+    }
+</script>
 </html>
